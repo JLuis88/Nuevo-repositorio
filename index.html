@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiProyecto</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        /*movil*/
+
+        .contenedor {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: 0.5rem;
+            margin-left: 0.5rem;
+            float: left;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside > p {
+            margin: 0.5rem;
+        }
+
+        p {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        aside > .aside {
+            margin: 0.5rem;
+        } 
+
+        .aside {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'header header header header header header'
+            'menu main main main rigth rigth'
+            'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+        }
+
+        /*escritorio*/
+        @media only screen and (min-width:781px) {
+            
+        header > h1 {
+            margin-bottom: 0;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+            margin-bottom: 0;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+            float: inline-end;
+        }
+
+        body {
+            display: grid;
+            grid-template-areas:
+            'header header header header'
+            'menu menu menu menu'
+            'aside main main rigth'
+            'footer footer footer footer';
+            gap: 2px;
+        }
+
+        aside {
+            width: 40%;
+            padding-left: 0.5rem;
+            margin-left: 0.5rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside > p {
+            margin: 0.5rem;
+        }
+
+        p {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        aside > .aside {
+            margin: 0.5rem;
+        } 
+
+        .aside {
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        }
+        /*tablet*/
+        @media only screen and (min-width:461px) and (max-width:780px){
+
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+           <h1>Holamundo</h1>
+        </header>
+        <nav class="navegacion">
+            <aside class="aside">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore impedit corporis ipsa hic, veritatis ratione sint, rerum autem perspiciatis numquam quisquam. Dolore tenetur minus laboriosam. Deleniti perspiciatis voluptas expedita dolor?</p>
+            </aside>
+        </nav>
+        <div class="contenedor">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium iure iusto iste fugiat recusandae quaerat vero eaque eos inventore similique, aliquid sit aut? Fugiat tempore amet unde temporibus incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+    <footer>
+        <p>adios xD</p>
+    </footer>
+    </article>
+</body>
+</html>
